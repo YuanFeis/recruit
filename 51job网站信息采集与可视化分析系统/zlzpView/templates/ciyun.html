@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+<h1 >职位名称信息</h1>
+<div class="embed-responsive embed-responsive-16by9">
+<iframe class="center-block" src="{{ url_for("static",filename="img/wordcloud_pname.png") }}" style="height: 1024px;width: 100%;float: right" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" >
+</iframe>
+</div>
+<h1 >职位需求信息</h1>
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="center-block" src="{{ url_for("static",filename="img/wordcloud_requirement.png") }}" style="height: 1000px;width: 100%;float: right" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" >
+</iframe>
+    </div>
+<h1 >职位地点信息</h1>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="center-block" src="{{ url_for("static",filename="img/wordcloud_workplace.png") }}" style="height: 1000px;width: 100%;float: right" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" >
+</iframe>
+  </div>
+<h1 >职位种类信息</h1>
+  <div class="embed-responsive embed-responsive-16by9">
+    <iframe class="center-block" src="{{ url_for("static",filename="img/wordcloud_nature.png") }}" style="height: 1000px;width: 100%;float: right" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" >
+</iframe>
+  </div>
+{% endblock %}
+
